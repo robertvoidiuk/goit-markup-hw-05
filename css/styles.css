@@ -571,6 +571,10 @@ img {
   color: #fff;
 }
 
+.mwf-input::placeholder {
+  color: #fff;
+}
+
 .btn-mwf {
   min-width: 165px;
   height: 40px;
@@ -597,3 +601,120 @@ img {
 /* #endregion Modal window footer*/
 
 /* #endregion Footer end */
+
+/* #region Backdrop start*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 408px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  padding: 72px 24px 24px 24px;
+}
+
+.btn-mw-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-mw-close:hover,
+.btn-mw-close:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
+}
+
+.icon-close-mw {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-mw {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 16px;
+}
+
+.mw-inputs-cont {
+  margin-bottom: 8px;
+}
+
+.label-mw-inputs {
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  display: block;
+  margin-bottom: 4px;
+}
+
+.inputs-svg-mw-cont {
+  position: relative;
+}
+
+.mw-inputs-and-svg {
+  width: 100%;
+  height: 40px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  padding-left: 38px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mw-inputs-and-svg:focus {
+  border-color: #4d5ae5;
+}
+
+.icon-svg-mw {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mw-inputs-and-svg:focus + .icon-svg-mw {
+  fill: #4d5ae5;
+}
+/* #endregion Backdrop end */
