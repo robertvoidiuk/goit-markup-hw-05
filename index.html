@@ -547,6 +547,7 @@
         </div>
       </div>
     </footer>
+    <!-- Backdrop -->
     <div class="backdrop">
       <div class="modal-window">
         <button class="btn-mw-close" type="button">
@@ -598,6 +599,34 @@
               </svg>
             </div>
           </div>
+          <div class="mw-text-input-cont">
+            <label class="label-mw-inputs" for="user-comment">Comment</label>
+            <textarea
+              class="mw-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="mw-checkbox">
+            <input
+              class="mw-checkbox-user-privacy visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+              type="checkbox"
+            />
+            <label class="label-checkbox-mw" for="user-privacy"
+              ><span class="mw-span">
+                <svg class="icon-checkbox-mw" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy-mw">Privacy Policy</a></label
+            >
+          </div>
+          <button class="btn-mw-send" type="submit">Send</button>
         </form>
       </div>
     </div>
