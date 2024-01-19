@@ -552,16 +552,12 @@ img {
 
 .mwf-form {
   display: flex;
-}
-
-.mwf-label {
   gap: 24px;
 }
 
 .mwf-input {
   width: 264px;
   height: 40px;
-  margin-right: 24px;
   border-radius: 4px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
